@@ -9,15 +9,18 @@ module JobInterview
       if args && args.include?(:iterative)
         iterative_fib(n)
       else
-        recursive_fib(n)
+        ## TODO: make this efficient
+        return Array.new(n) {|i| recursive_fib(i + 1) }
+
       end
+
     end
 
-    private
-    def recursive_fib(n)
+   private
+   def recursive_fib(n)
       return n if (0..1).include? n
-      fib(n-1) + fib(n-2) if n > 1
-    end
+      recursive_fib(n-1) + recursive_fib(n-2)
+   end
 
     def iterative_fib(n)
       result = [1, 1]
@@ -26,7 +29,7 @@ module JobInterview
         result <<  result[-1] + result[-2]
       end
 
-      return curr
+      return result
     end
 
   end
