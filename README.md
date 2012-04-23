@@ -16,7 +16,17 @@ Let's face it. Programming job interviews can be annoying. And sometimes the que
     @answer.fib(10)
     
     => [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
-    
+
+## FAQ
+
+  Q. Why would you even do this?
+  
+  A. We wanted to hack on something trivial at BohConf 2012. 
+  
+  Q. Do you expect this of be of any use to anyone, ever?
+  
+  A. No.
+
 ## AUTHORS
 
 [Micah Gates](https://github.com/mgates)
