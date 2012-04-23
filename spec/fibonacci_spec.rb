@@ -1,11 +1,15 @@
 require "spec_helper.rb"
 module FibonacciSpec
-  include JobInterview::Fibonacci
+  
 
 
   describe "When called" do
+    before(:each) do
+      @answer = JobInterview::Answer.new
+    end
+    
     it "should return the fibinacci sequence" do
-      fib(10).should be [1, 1, 2, 3, 5, 8, 12, 20, 32, 52]
+      @answer.fib(10).should == [1, 1, 2, 3, 5, 8, 12, 20, 32, 52]
     end
   end
 
