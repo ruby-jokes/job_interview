@@ -1,3 +1,5 @@
-module FizzBuzz
+module JobInterview
+  module FizzBuzz
   
+  end
 end
