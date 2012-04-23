@@ -1,4 +1,4 @@
-require "spec_helper"
+require "spec_helper.rb"
 module FibonacciSpec
   include JobInterview::Fibonacci
 
