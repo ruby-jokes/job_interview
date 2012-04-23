@@ -1,6 +1,6 @@
 module JobInterview
   module Fibonacci
-  
+
     ##
     # args should be the strategy to be used (one of :iterative, :recursive)
     # Defaults to recursive
@@ -12,13 +12,13 @@ module JobInterview
         recursive_fib(n)
       end
     end
-  
+
     private
     def recursive_fib(n)
       return n if (0..1).include? n
       fib(n-1) + fib(n-2) if n > 1
     end
-  
+
     def iterative_fib(n)
       curr = 0
       succ = 1
@@ -29,6 +29,6 @@ module JobInterview
 
       return curr
     end
-  
+
   end
 end
