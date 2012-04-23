@@ -5,7 +5,6 @@ module JobInterview
     def in_5_years
       "I'd like to " +
         [
-          "",
           "have made",
           "have enhanced shareholder value by creating",
           "made someone else rich with my"
@@ -15,7 +14,7 @@ module JobInterview
 
     def leaving_current
       "I'm " +
-        ["",
+        [
           "seeking to",
           "leaving because I can't" ,
           "leaving because I have to",
@@ -26,7 +25,6 @@ module JobInterview
 
     def manhole_cover
       [
-        "",
         "Because men are round",
         "Because manholes are round",
         "So they don't fall in",
