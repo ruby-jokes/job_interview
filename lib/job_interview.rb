@@ -1,6 +1,6 @@
 module JobInterview
- autoload :FizzBuzz, './job_interview/fizz_buzz'
- autoload :Fibonacci, './job_interview/fibonacci'
- autoload :Knapsack, './job_interview/knapsack' 
+ autoload :FizzBuzz, File.expand_path('../job_interview/fizz_buzz', __FILE__)
+ autoload :Fibonacci, File.expand_path('../job_interview/fibonacci', __FILE__)
+ autoload :Knapsack, File.expand_path('../job_interview/knapsack' , __FILE__)
   
 end
