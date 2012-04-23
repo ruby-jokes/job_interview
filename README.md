@@ -21,7 +21,7 @@ Let's face it. Programming job interviews can be annoying. And sometimes the que
 
     => "@answer.quine(__FILE__)"
 
-Now, job_interview will help you answer non-technical interview questions as well!
+Now, job_interview will help you answer non-technical interview questions as well! Simply call the appropriate method, and a randomly constructed answer will pop out.
 
     include JobInterview::Questions
 
