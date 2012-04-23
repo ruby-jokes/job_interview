@@ -1,8 +1,8 @@
 module JobInterview
   module Quine
     
-    def quine
-      return File.read(__FILE__)
+    def quine(file)
+      return File.read(file)
     end
     
   end
