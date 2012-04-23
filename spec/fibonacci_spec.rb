@@ -9,7 +9,7 @@ module FibonacciSpec
     end
     
     it "should return the fibinacci sequence" do
-      @answer.fib(10).should == [1, 1, 2, 3, 5, 8, 12, 20, 32, 52]
+      @answer.fib(10).should == [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
     end
   end
 
