@@ -20,11 +20,10 @@ module JobInterview
     end
 
     def iterative_fib(n)
-      curr = 0
-      succ = 1
+      result = [1, 1]
 
-      n.times do |i|
-        curr, succ = succ, curr + succ
+      (n - 2) .times do |i|
+        result <<  result[-1] + result[-2]
       end
 
       return curr
