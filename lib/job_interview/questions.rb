@@ -8,7 +8,7 @@ module JobInterview
           "",
           "have made",
           "have enhanced shareholder value by creating",
-          "made someone else rich with my"
+          "have made someone else rich with my"
         ][rand(3) + 1] + " " +
         Faker::Company.catch_phrase.downcase + "."
     end
@@ -29,6 +29,14 @@ module JobInterview
     end
 
     def greatest_weakness
+    end
+    
+    def why_here
+      "Your company " +
+      [ "is renowned for",
+        "is re-inventing",
+        "has revolutionized"
+      ].sample + " " + Faker::Company.catch_phrase.downcase + "."
     end
   end
 end

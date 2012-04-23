@@ -16,6 +16,31 @@ Let's face it. Programming job interviews can be annoying. And sometimes the que
     @answer.fib(10)
     
     => [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+    
+    @answer.quine(__FILE__)
+    
+    => "@answer.quine(__FILE__)"
+    
+Now, job_interview will help you answer non-technical interview questions as well!
+
+    include JobInterview::Questions
+    
+Q. Where do you see yourself in five years?
+
+    in_five_years
+    
+    => "I'd like to have made someone else rich with my re-contextualized non-volatile open architecture."
+    
+Q. Why are you leaving your current position?
+
+    leaving_current
+    
+     => "I'm seeking to optimize extensible applications."
+Q.Why do you want to work here?
+
+    why_here
+    
+    => "Your company has revolutionized seamless next generation interface."
 
 ## FAQ
 
@@ -32,6 +57,10 @@ Let's face it. Programming job interviews can be annoying. And sometimes the que
 [Micah Gates](https://github.com/mgates)
 
 [Jason Lewis](https://github.com/canweriotnow)
+
+The authors would also like to thank:
+
+- 
 
 ## LICENSE
 
