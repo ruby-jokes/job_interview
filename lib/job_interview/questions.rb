@@ -25,10 +25,10 @@ module JobInterview
 
     def manhole_cover
       [
-        "Because men are round",
-        "Because manholes are round",
-        "So they don't fall in",
-        "Because Reuleaux Triangles are hard to manufacture"
+        "Because men are round.",
+        "Because manholes are round.",
+        "So they don't fall in.",
+        "Because Reuleaux Triangles are hard to manufacture."
       ].sample
 
     end
@@ -39,7 +39,7 @@ module JobInterview
       "so I " +
       ["make others jealous", "make too much money"].sample + "."
     end
-    
+
     def why_here
       "Your company " +
       [ "is renowned for",
