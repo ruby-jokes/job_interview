@@ -6,7 +6,7 @@ module JobInterview
     # Defaults to recursive
     #
     def fib(n, *args)
-      if args && args.include? :iterative
+      if args && args.include?(:iterative)
         iterative_fib(n)
       else
         recursive_fib(n)
