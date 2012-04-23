@@ -74,7 +74,7 @@ Q.Why do you want to work here?
 
 The authors would also like to thank:
 
-- That one fellow we promised we'd put here, befire we forgot his name (If you're him, let us know)
+- That one fellow we promised we'd put here, before we forgot his name (If you're him, let us know)
 
 ## LICENSE
 
