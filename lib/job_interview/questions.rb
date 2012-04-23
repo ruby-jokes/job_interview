@@ -13,5 +13,22 @@ module JobInterview
         Faker::Company.catch_phrase.downcase + "."
     end
 
+    def leaving_current
+      "I'm " +
+        ["",
+          "seeking to",
+          "leaving because I can't" ,
+          "leaving because I have to",
+          "not happy with the oppertunities I have for"
+        ][rand(4) + 1] + " " +
+        Faker::Company.bs + "."
+    end
+
+    def manhole_cover
+
+    end
+
+    def greatest_weakness
+    end
   end
 end
