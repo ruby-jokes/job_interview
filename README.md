@@ -57,7 +57,7 @@ Q. Why do you want to work here?
 
 Q. Does P = NP?
 
-    p_equals_np?
+    p_equals_np
 
     => "I doubt it, but it would make life easier for traveling salesmen."
 
