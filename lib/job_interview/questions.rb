@@ -37,7 +37,10 @@ module JobInterview
       ["Some times I", "I always"].sample + " " +
       ["try too hard", "work too much", "care too much", "fail so rarely"].sample  + " " +
       "so I " +
-      ["make others jealous", "make too much money"].sample + "."
+      [ "make others jealous", 
+        "make too much money",
+        "shift too many paradigms",
+        "innovate too hard"].sample + "."
     end
 
     def why_here
