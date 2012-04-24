@@ -1,5 +1,7 @@
 # Job Interview
 
+[![Build Status](https://secure.travis-ci.org/ruby-jokes/job_interview.png?branch=master)](http://travis-ci.org/ruby-jokes/job_interview)
+
 ## SYNOPSIS
 
 Let's face it. Programming job interviews can be annoying. And sometimes the questions require you to actually think. With Job Interview, most programming interview questions can be answered in 3 lines of Ruby.
