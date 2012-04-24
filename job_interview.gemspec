@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name          = 'job_interview'
-  s.version       = '0.1.2'
+  s.version       = '0.1.3'
   s.summary       = 'Programmer job interview answers, packaged for your convenience'
   s.description   = 'Programmer job interview answers, packaged for your convenience. Fibonacci, FizzBuzz, and more! A project from BohConf 2012.'
   s.authors       = ["Micah Gates", "Jason Lewis"]
@@ -11,7 +11,9 @@ Gem::Specification.new do |s|
                       'lib/job_interview/fizz_buzz.rb',
                       'lib/job_interview/knapsack.rb',
                       'lib/job_interview/answer.rb',
-                      'lib/job_interview/questions.rb']
+                      'lib/job_interview/questions.rb'
+                      'lib/job_interview/primes.rb'
+                      'lib/job_interview/quine.rb']
   s.add_runtime_dependency 'faker', '~> 0.9.5'
   s.add_development_dependency 'rspec', '~> 2.9.0'
   s.test_files    = Dir.glob('spec/*_spec.rb')
