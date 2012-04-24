@@ -50,7 +50,7 @@ module JobInterview
         "has revolutionized"
       ].sample + " " + Faker::Company.catch_phrase.downcase + "."
     end
-    
+
     def what_experience(thing)
       "I am " +
       [
@@ -60,14 +60,14 @@ module JobInterview
         "known as an ultimate authority on "
         ].sample + thing + "."
     end
-    
-    def p_equals_np?
+
+    def p_equals_np
       [
         "If it does, we can kiss encryption goodbye.",
         "With our current models of computation, answering that question remains infeasible.",
         "I doubt it, but it would make life easier for traveling salesmen."
       ].sample
     end
-    
+
   end
 end
