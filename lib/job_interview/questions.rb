@@ -48,8 +48,22 @@ module JobInterview
       ].sample + " " + Faker::Company.catch_phrase.downcase + "."
     end
     
+    def what_experience(thing)
+      "I am " +
+      [
+        "a world-renowned expert in ",
+        "highly proficient with ",
+        "exquisitely competent at ",
+        "known as an ultimate authority on "
+        ].sample + thing + "."
+    end
+    
     def p_equals_np?
-      return 'I dunno LOL ¯\(°_o)/¯'
+      [
+        "If it does, we can kiss encryption goodbye.",
+        "With our current models of computation, answering that question remains infeasible.",
+        "I doubt it, but it would make life easier for traveling salesmen."
+      ].sample
     end
     
   end

@@ -59,7 +59,7 @@ Q. Does P = NP?
 
     p_equals_np?
 
-    => "I dunno LOL ¯\(°_o)/¯"
+    => "I doubt it, but it would make life easier for traveling salesmen."
 
 ## FAQ
 
