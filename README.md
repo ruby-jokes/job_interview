@@ -65,12 +65,15 @@ Q. Does P = NP?
 
   Q. Why would you even do this?
 
-  A. We wanted to hack on something trivial at BohConf 2012.
+  A. We wanted to hack on something trivial and silly at BohConf 2012. Also, most job interviews are retarded, and we felt the need to point this out.
 
   Q. Do you expect this of be of any use to anyone, ever?
 
   A. No.
 
+  Q. So what's next? 
+  
+  A. The Ruby implementation of job_interview is pretty decent at this point, we think. But maybe you're not applying for a Ruby job. So a Clojure implementation seems likely, possibly to be followed by JavaScript.
 
 ## AUTHORS
 
