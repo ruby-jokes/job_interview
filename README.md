@@ -10,19 +10,15 @@ Let's face it. Programming job interviews can be annoying. And sometimes the que
     @answer = JobInterview::Answer.new
 
     @answer.fizz_buzz(5)
-
     => [1, 2, "Fizz", 4, "Buzz"]
 
     @answer.fib(10)
-
     => [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
 
     @answer.quine(__FILE__)
-
     => "@answer.quine(__FILE__)"
 
     @answer.primes(10)
-    
     => [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
 
 Now, job_interview will help you answer non-technical interview questions as well! Simply call the appropriate method, and a randomly constructed answer will pop out.
