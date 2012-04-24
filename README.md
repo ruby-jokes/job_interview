@@ -43,17 +43,23 @@ Q.  Why are manhole covers round?
 
      => "Because Reuleaux Triangles are hard to manufacture."
 
-Q.  WHat is you greatest weakness?
+Q.  What is you greatest weakness?
 
     greatest_weakness
 
      => "I always fail so rarely so I make too much money."
 
-Q.Why do you want to work here?
+Q. Why do you want to work here?
 
     why_here
 
     => "Your company has revolutionized seamless next generation interface."
+
+Q. Does P = NP?
+
+    p_equals_np?
+    
+    => "I dunno LOL ¯\(°_o)/¯"
 
 ## FAQ
 

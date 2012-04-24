@@ -18,7 +18,7 @@ module JobInterview
           "seeking to",
           "leaving because I can't" ,
           "leaving because I have to",
-          "not happy with the oppertunities I have for"
+          "not happy with the oppertunities I have to"
         ].sample + " " +
         Faker::Company.bs + "."
     end
@@ -47,5 +47,10 @@ module JobInterview
         "has revolutionized"
       ].sample + " " + Faker::Company.catch_phrase.downcase + "."
     end
+    
+    def p_equals_np?
+      return 'I dunno LOL ¯\(°_o)/¯'
+    end
+    
   end
 end

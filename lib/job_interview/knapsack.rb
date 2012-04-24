@@ -1,6 +1,6 @@
 module JobInterview
   module Knapsack
-    def knapsack
+    def knapsack(coll)
       
     end
   end
