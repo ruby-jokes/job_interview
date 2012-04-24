@@ -11,8 +11,8 @@ Gem::Specification.new do |s|
                       'lib/job_interview/fizz_buzz.rb',
                       'lib/job_interview/knapsack.rb',
                       'lib/job_interview/answer.rb',
-                      'lib/job_interview/questions.rb'
-                      'lib/job_interview/primes.rb'
+                      'lib/job_interview/questions.rb',
+                      'lib/job_interview/primes.rb',
                       'lib/job_interview/quine.rb']
   s.add_runtime_dependency 'faker', '~> 0.9.5'
   s.add_development_dependency 'rspec', '~> 2.9.0'
