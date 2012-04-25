@@ -83,6 +83,11 @@ Q. Does P = NP?
 
 [Jason Lewis](https://github.com/canweriotnow)
 
+## Contributions by:
+
+[intolerable](https://github.com/intolerable)
+[Joel Parker Henderson](https://github.com/joelparkerhenderson)
+
 The authors would also like to thank:
 
 - Carlos León [@mongrelion](https://twitter.com/mongrelion)
