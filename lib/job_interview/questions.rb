@@ -61,6 +61,14 @@ module JobInterview
         ].sample + thing + "."
     end
 
+    def what_interest
+      "I have a special interest in " +
+        ["scalable ", "modular ", "distributed "].sample +
+        ["mobile ", "social ", "global ", "local "].sample +
+        ["business ", "consumer ", "startup ", "enterprise "].sample +
+        ["applications.", "frameworks.", "platforms.", "services."].sample
+    end
+
     def p_equals_np
       [
         "If it does, we can kiss encryption goodbye.",
