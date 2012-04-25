@@ -1,3 +1,4 @@
+require 'matrix'
 module JobInterview
   module Fibonacci
 
@@ -8,6 +9,8 @@ module JobInterview
     def fib(n, *args)
       if args && args.include?(:iterative)
         iterative_fib(n)
+      elsif args && args.include?(:matrix)
+        matrix_fib(n)
       else
         ## TODO: make this efficient
         return Array.new(n) {|i| recursive_fib(i + 1) }
@@ -30,6 +33,13 @@ module JobInterview
       end
 
       return result
+    end
+    
+    def matrix_fib(n)
+      1.upto(n).map do |i|
+        fibonacci_matrix = Matrix[[1,1],[1,0]]
+        (fibonacci_matrix**(i-1)) [0,0]
+      end
     end
 
   end
