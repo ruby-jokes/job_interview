@@ -86,7 +86,7 @@ Q. Does P = NP?
 The authors would also like to thank:
 
 - That one fellow we promised we'd put here, before we forgot his name (If you're him, let us know)
-- [Faker](http://faker.rubyforge.org/),the funniest placehold gem
+- [Faker](http://faker.rubyforge.org/), the funniest placehold gem
 
 ## LICENSE
 
