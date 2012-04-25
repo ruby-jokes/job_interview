@@ -19,7 +19,7 @@ module QuestionsSpec
       end
     end
 
-    %W[in_5_years leaving_current manhole_cover greatest_weakness why_here p_equals_np].each do |m|
+    %W[in_5_years leaving_current manhole_cover greatest_weakness why_here p_equals_np what_interest].each do |m|
       it "should return the right answer for #{m}" do
         answer = @dummy.send(m)
         is_correct_answer(m, answer).should be_true
