@@ -86,6 +86,7 @@ Q. Does P = NP?
 ## Contributions by:
 
 [intolerable](https://github.com/intolerable)
+
 [Joel Parker Henderson](https://github.com/joelparkerhenderson)
 
 The authors would also like to thank:
