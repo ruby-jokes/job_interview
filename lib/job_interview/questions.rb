@@ -3,7 +3,7 @@ module JobInterview
   module Questions
 
     def in_5_years
-      "I'd like to " +
+      "I'd " + %W[like love hope].sample + " to " +
         [
           "have made",
           "have enhanced shareholder value by creating",
@@ -37,7 +37,7 @@ module JobInterview
       ["Some times I", "I always"].sample + " " +
       ["try too hard", "work too much", "care too much", "fail so rarely"].sample  + " " +
       "so I " +
-      [ "make others jealous", 
+      [ "make others jealous",
         "make too much money",
         "shift too many paradigms",
         "innovate too hard"].sample + "."

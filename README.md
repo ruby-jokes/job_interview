@@ -1,5 +1,7 @@
 # Job Interview
 
+[![Build Status](https://secure.travis-ci.org/ruby-jokes/job_interview.png?branch=master)](http://travis-ci.org/ruby-jokes/job_interview)
+
 ## SYNOPSIS
 
 Let's face it. Programming job interviews can be annoying. And sometimes the questions require you to actually think. With Job Interview, most programming interview questions can be answered in 3 lines of Ruby.
@@ -83,7 +85,8 @@ Q. Does P = NP?
 
 The authors would also like to thank:
 
-- That one fellow we promised we'd put here, before we forgot his name (If you're him, let us know)
+- Carlos León [@mongrelion](https://twitter.com/mongrelion)
+- [Faker](http://faker.rubyforge.org/), the funniest placeholder gem
 
 ## LICENSE
 
