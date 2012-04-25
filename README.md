@@ -63,6 +63,12 @@ Q. Does P = NP?
 
     => "I doubt it, but it would make life easier for traveling salesmen."
 
+Q. Please tell us, in a few words, about what interests you?
+
+    what_interest
+
+    => "I have a special interest in modular mobile startup platforms."
+
 ## FAQ
 
   Q. Why would you even do this?
