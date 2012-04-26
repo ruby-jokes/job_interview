@@ -122,6 +122,15 @@ The authors would also like to thank:
 - Carlos León [@mongrelion](https://twitter.com/mongrelion)
 - [Faker](http://faker.rubyforge.org/), the funniest placeholder gem
 
+## CONTRIBUTING
+
+Really? You have that much time on your hands? Awesome!
+
+Two guidelines, though:
+
+- Please include a test for any patches you submit. Job interviews are Serious Business, and we need to make sure the code is correct.
+- We're not that into adding more questions to `JobInterview::Questions`. So please don't target that module unless you're certain your patch is SUPER funny.
+
 ## LICENSE
 
 
