@@ -83,6 +83,10 @@ Q. Please tell us, in a few words, about what interests you?
 
   A. The Ruby implementation of job_interview is pretty decent at this point, we think. But maybe you're not applying for a Ruby job. So a Clojure implementation seems likely, possibly to be followed by JavaScript.
 
+## How do I get it?
+
+[At RubyGems, of course](http://rubygems.org/gems/job_interview)
+
 ## AUTHORS
 
 [Micah Gates](https://github.com/mgates)
