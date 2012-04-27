@@ -34,7 +34,7 @@ include JobInterview::Questions
 Q. Where do you see yourself in five years?
 
 ```ruby
-in_five_years
+in_5_years
 
  => "I'd like to have made someone else rich with my re-contextualized non-volatile open architecture."
 ```
