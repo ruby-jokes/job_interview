@@ -4,7 +4,7 @@
 
 ## SYNOPSIS
 
-Let's face it. Programming job interviews can be annoying. And sometimes the questions require you to actually think. With Job Interview, most programming interview questions can be answered in 3 lines of Ruby.
+Let's face it. Programmer job interviews can be annoying. And sometimes the questions require you to actually think. With Job Interview, most programming interview questions can be answered in 3 lines of Ruby.
 
 ## USAGE
 
@@ -12,17 +12,33 @@ Let's face it. Programming job interviews can be annoying. And sometimes the que
 require 'job_interview'
 @answer = JobInterview::Answer.new
 
+# FizzBuzz
 @answer.fizz_buzz(5)
  => [1, 2, "Fizz", 4, "Buzz"]
 
+# Fibonacci numbers (default: recursive strategy)
 @answer.fib(10)
  => [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+ 
+# Fibonacci numbers (iterative strategy)
+@answer.fib(10, :iterative)
+ => [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+ 
+# Fibonacci numbers (using matrices)
+@answer.fib(10, :matrix)
+ => [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
 
+# Quine
 @answer.quine(__FILE__)
  => "@answer.quine(__FILE__)"
 
+# The first n primes
 @answer.primes(10)
  => [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
+ 
+# Hello, World!
+@answer.hello_world
+ => "Hello, World!"
 ```
 
 Now, job_interview will help you answer non-technical interview questions as well! Simply call the appropriate method, and a randomly constructed answer will pop out.
