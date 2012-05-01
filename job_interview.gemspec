@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name          = 'job_interview'
-  s.version       = '0.1.3'
+  s.version       = '0.1.4'
   s.summary       = 'Programmer job interview answers, packaged for your convenience'
   s.description   = 'Programmer job interview answers, packaged for your convenience. Fibonacci, FizzBuzz, and more! A project from BohConf 2012.'
   s.authors       = ["Micah Gates", "Jason Lewis"]
