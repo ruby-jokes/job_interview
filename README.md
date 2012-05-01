@@ -6,6 +6,8 @@
 
 Let's face it. Programmer job interviews can be annoying. And sometimes the questions require you to actually think. With Job Interview, most programming interview questions can be answered in 3 lines of Ruby.
 
+You can view the slides from our RailsConf 2012 lightning talk about job_interview [here](http://ruby-jokes.github.com/job_interview/pres.html).
+
 ## USAGE
 
 ```ruby
