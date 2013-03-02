@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Job interview by ruby-jokes</title>
-    
+    <title>Job Interview by ruby-jokes</title>
+
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -15,49 +16,196 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>Job interview</h1>
-        <p>A gem for job interview type problems</p>
-        <p class="view"><a href="https://github.com/ruby-jokes/job_interview">View the Project on GitHub <small>ruby-jokes/job_interview</small></a></p>
+        <h1 class="header">Job Interview</h1>
+        <p class="header">A gem for job interview type problems</p>
+
         <ul>
-          <li><a href="https://github.com/ruby-jokes/job_interview/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/ruby-jokes/job_interview/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/ruby-jokes/job_interview">Fork On <strong>GitHub</strong></a></li>
+          <li class="download"><a class="buttons" href="https://github.com/ruby-jokes/job_interview/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/ruby-jokes/job_interview/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/ruby-jokes/job_interview">View On GitHub</a></li>
         </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/ruby-jokes">ruby-jokes</a></p>
+
+
       </header>
       <section>
-        <h3>Welcome to GitHub Pages.</h3>
+        <h1>Job Interview</h1>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<p><a href="http://travis-ci.org/ruby-jokes/job_interview"><img src="https://secure.travis-ci.org/ruby-jokes/job_interview.png?branch=master" alt="Build Status"></a></p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+<h2>SYNOPSIS</h2>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<p>Let's face it. Programmer job interviews can be annoying. And sometimes the questions require you to actually think. With Job Interview, most programming interview questions can be answered in 3 lines of Ruby.</p>
 
-<h3>Designer Templates</h3>
+<p>You can view the slides from our RailsConf 2012 lightning talk about job_interview <a href="http://ruby-jokes.github.com/job_interview/pres.html">here</a>.</p>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<h2>USAGE</h2>
 
-<h3>Rather Drive Stick?</h3>
+<div class="highlight"><pre><span class="nb">require</span> <span class="s1">'job_interview'</span>
+<span class="vi">@answer</span> <span class="o">=</span> <span class="no">JobInterview</span><span class="o">::</span><span class="no">Answer</span><span class="o">.</span><span class="n">new</span>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<span class="c1"># FizzBuzz</span>
+<span class="vi">@answer</span><span class="o">.</span><span class="n">fizz_buzz</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+ <span class="o">=&gt;</span> <span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s2">"Fizz"</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="s2">"Buzz"</span><span class="o">]</span>
 
-<h3>Authors and Contributors</h3>
+<span class="c1"># Fibonacci numbers (default: recursive strategy)</span>
+<span class="vi">@answer</span><span class="o">.</span><span class="n">fib</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+ <span class="o">=&gt;</span> <span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">21</span><span class="p">,</span> <span class="mi">34</span><span class="p">,</span> <span class="mi">55</span><span class="o">]</span>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<span class="c1"># Fibonacci numbers (iterative strategy)</span>
+<span class="vi">@answer</span><span class="o">.</span><span class="n">fib</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="ss">:iterative</span><span class="p">)</span>
+ <span class="o">=&gt;</span> <span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">21</span><span class="p">,</span> <span class="mi">34</span><span class="p">,</span> <span class="mi">55</span><span class="o">]</span>
 
-<h3>Support or Contact</h3>
+<span class="c1"># Fibonacci numbers (using matrices)</span>
+<span class="vi">@answer</span><span class="o">.</span><span class="n">fib</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="ss">:matrix</span><span class="p">)</span>
+ <span class="o">=&gt;</span> <span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">21</span><span class="p">,</span> <span class="mi">34</span><span class="p">,</span> <span class="mi">55</span><span class="o">]</span>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+<span class="c1"># Quine</span>
+<span class="vi">@answer</span><span class="o">.</span><span class="n">quine</span><span class="p">(</span><span class="bp">__FILE__</span><span class="p">)</span>
+ <span class="o">=&gt;</span> <span class="s2">"@answer.quine(__FILE__)"</span>
+
+<span class="c1"># The first n primes</span>
+<span class="vi">@answer</span><span class="o">.</span><span class="n">primes</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+ <span class="o">=&gt;</span> <span class="o">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">19</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">29</span><span class="o">]</span>
+
+<span class="c1"># Hello, World!</span>
+<span class="vi">@answer</span><span class="o">.</span><span class="n">hello_world</span>
+ <span class="o">=&gt;</span> <span class="s2">"Hello, World!"</span>
+</pre></div>
+
+<p>Now, job_interview will help you answer non-technical interview questions as well! Simply call the appropriate method, and a randomly constructed answer will pop out.</p>
+
+<div class="highlight"><pre><span class="kp">include</span> <span class="no">JobInterview</span><span class="o">::</span><span class="no">Questions</span>
+</pre></div>
+
+<p>Q. Where do you see yourself in five years?</p>
+
+<div class="highlight"><pre><span class="n">in_5_years</span>
+
+ <span class="o">=&gt;</span> <span class="s2">"I'd like to have made someone else rich with my re-contextualized non-volatile open architecture."</span>
+</pre></div>
+
+<p>Q. Why are you leaving your current position?</p>
+
+<div class="highlight"><pre><span class="n">leaving_current</span>
+
+ <span class="o">=&gt;</span> <span class="s2">"I'm seeking to optimize extensible applications."</span>
+</pre></div>
+
+<p>Q.  Why are manhole covers round?</p>
+
+<div class="highlight"><pre><span class="n">manhole_cover</span>
+
+ <span class="o">=&gt;</span> <span class="s2">"Because Reuleaux Triangles are hard to manufacture."</span>
+</pre></div>
+
+<p>Q.  What is you greatest weakness?</p>
+
+<div class="highlight"><pre><span class="n">greatest_weakness</span>
+
+ <span class="o">=&gt;</span> <span class="s2">"I always fail so rarely so I make too much money."</span>
+</pre></div>
+
+<p>Q. Why do you want to work here?</p>
+
+<div class="highlight"><pre><span class="n">why_here</span>
+
+ <span class="o">=&gt;</span> <span class="s2">"Your company has revolutionized seamless next generation interface."</span>
+</pre></div>
+
+<p>Q. Does P = NP?</p>
+
+<div class="highlight"><pre><span class="n">p_equals_np</span>
+
+ <span class="o">=&gt;</span> <span class="s2">"I doubt it, but it would make life easier for traveling salesmen."</span>
+</pre></div>
+
+<p>Q. Please tell us, in a few words, about what interests you?</p>
+
+<div class="highlight"><pre><span class="n">what_interest</span>
+
+ <span class="o">=&gt;</span> <span class="s2">"I have a special interest in modular mobile startup platforms."</span>
+</pre></div>
+
+<h2>FAQ</h2>
+
+<p>Q. Why would you even do this?</p>
+
+<p>A. We wanted to hack on something trivial and silly at BohConf 2012. Also, most job interviews are dumb, and we felt the need to point this out.</p>
+
+<p>Q. Do you expect this of be of any use to anyone, ever?</p>
+
+<p>A. No.</p>
+
+<p>Q. So what's next?</p>
+
+<p>A. The Ruby implementation of job_interview is pretty decent at this point, we think. But maybe you're not applying for a Ruby job. So a Clojure implementation seems likely, possibly to be followed by JavaScript.</p>
+
+<h2>How do I get it?</h2>
+
+<p><a href="http://rubygems.org/gems/job_interview">At RubyGems, of course</a></p>
+
+<h2>AUTHORS</h2>
+
+<p><a href="https://github.com/mgates">Micah Gates</a></p>
+
+<p><a href="https://github.com/canweriotnow">Jason Lewis</a></p>
+
+<h2>Contributions by:</h2>
+
+<p><a href="https://github.com/intolerable">intolerable</a></p>
+
+<p><a href="https://github.com/joelparkerhenderson">Joel Parker Henderson</a></p>
+
+<p>The authors would also like to thank:</p>
+
+<ul>
+<li>Carlos León <a href="https://twitter.com/mongrelion">@mongrelion</a>
+</li>
+<li>
+<a href="http://faker.rubyforge.org/">Faker</a>, the funniest placeholder gem</li>
+</ul><h2>CONTRIBUTING</h2>
+
+<p>Really? You have that much time on your hands? Awesome!</p>
+
+<p>Two guidelines, though:</p>
+
+<ul>
+<li>Please include a test for any patches you submit. Job interviews are Serious Business, and we need to make sure the code is correct.</li>
+<li>We're not that into adding more questions to <code>JobInterview::Questions</code>. So please don't target that module unless you're certain your patch is SUPER funny.</li>
+</ul><h2>LICENSE</h2>
+
+<p>Copyright (C) 2012 Micah Gates and Jason Lewis</p>
+
+<p>This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.</p>
+
+<p>This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.</p>
+
+<p>You should have received a copy of the GNU General Public License
+along with this program.  If not, see <a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>.</p>
       </section>
       <footer>
-        <p>This project is maintained by <a href="https://github.com/ruby-jokes">ruby-jokes</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
       </footer>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		          <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-22978638-3");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
   </body>
 </html>
