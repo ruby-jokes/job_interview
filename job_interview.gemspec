@@ -11,6 +11,7 @@ Gem::Specification.new do |s|
                       'lib/job_interview/fizz_buzz.rb',
                       'lib/job_interview/knapsack.rb',
                       'lib/job_interview/answer.rb',
+                      'lib/job_interview/hello_world.rb',
                       'lib/job_interview/questions.rb',
                       'lib/job_interview/primes.rb',
                       'lib/job_interview/quine.rb']
