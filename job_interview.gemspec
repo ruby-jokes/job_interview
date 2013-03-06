@@ -13,7 +13,8 @@ Gem::Specification.new do |s|
                       'lib/job_interview/answer.rb',
                       'lib/job_interview/questions.rb',
                       'lib/job_interview/primes.rb',
-                      'lib/job_interview/quine.rb']
+                      'lib/job_interview/quine.rb',
+                      'lib/job_interview/hello_world.rb']
   s.add_runtime_dependency 'faker', '~> 0.9.5'
   s.add_development_dependency 'rspec', '~> 2.9.0'
   s.add_development_dependency 'rake', '~> 0.9.2'
