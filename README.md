@@ -31,8 +31,8 @@ require 'job_interview'
  => [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
 
 # Quine
-@answer.quine(__FILE__)
- => "@answer.quine(__FILE__)"
+@answer.quine
+ => "@answer.quine"
 
 # The first n primes
 @answer.primes(10)
