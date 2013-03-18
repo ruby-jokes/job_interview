@@ -1,11 +1,11 @@
 Gem::Specification.new do |s|
   s.name          = 'job_interview'
-  s.version       = '0.1.5'
+  s.version       = '0.1.6'
   s.summary       = 'Programmer job interview answers, packaged for your convenience'
   s.description   = 'Programmer job interview answers, packaged for your convenience. Fibonacci, FizzBuzz, and more! A project from BohConf 2012.'
   s.authors       = ["Micah Gates", "Jason Lewis"]
   s.email         = ["github@mgates.com", "jason@decomplecting.org"]
-  s.homepage      = "https://ruby-jokes.github.com/job_interview"
+  s.homepage      = "http://ruby-jokes.github.com/job_interview"
   s.files         = [ 'lib/job_interview.rb', 
                       'lib/job_interview/fibonacci.rb',
                       'lib/job_interview/fizz_buzz.rb',
