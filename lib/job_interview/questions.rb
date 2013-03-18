@@ -18,7 +18,7 @@ module JobInterview
           "seeking to",
           "leaving because I can't" ,
           "leaving because I have to",
-          "not happy with the oppertunities I have to"
+          "not happy with the opportunities I have to"
         ].sample + " " +
         Faker::Company.bs + "."
     end
