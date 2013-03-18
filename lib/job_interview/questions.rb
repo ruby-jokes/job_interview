@@ -73,7 +73,8 @@ module JobInterview
       [
         "If it does, we can kiss encryption goodbye.",
         "With our current models of computation, answering that question remains infeasible.",
-        "I doubt it, but it would make life easier for traveling salesmen."
+        "I doubt it, but it would make life easier for traveling salesmen.",
+        "Sure! P = 0 or N = 1!"
       ].sample
     end
 
