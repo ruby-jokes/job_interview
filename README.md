@@ -1,6 +1,9 @@
 # Job Interview
 
 [![Build Status](https://secure.travis-ci.org/ruby-jokes/job_interview.png?branch=master)](http://travis-ci.org/ruby-jokes/job_interview)
+[![Dependency Status](https://gemnasium.com/ruby-jokes/job_interview.png)](https://gemnasium.com/ruby-jokes/job_interview)
+[![Code Climate](https://codeclimate.com/github/ruby-jokes/job_interview.png)](https://codeclimate.com/github/ruby-jokes/job_interview)
+[![Coverage Status](https://coveralls.io/repos/ruby-jokes/job_interview/badge.png?branch=master)](https://coveralls.io/r/ruby-jokes/job_interview)
 
 ## SYNOPSIS
 
