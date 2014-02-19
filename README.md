@@ -4,6 +4,7 @@
 [![Dependency Status](https://gemnasium.com/ruby-jokes/job_interview.png)](https://gemnasium.com/ruby-jokes/job_interview)
 [![Code Climate](https://codeclimate.com/github/ruby-jokes/job_interview.png)](https://codeclimate.com/github/ruby-jokes/job_interview)
 [![Coverage Status](https://coveralls.io/repos/ruby-jokes/job_interview/badge.png?branch=master)](https://coveralls.io/r/ruby-jokes/job_interview)
+[![Gem Version](https://badge.fury.io/rb/job_interview.png)](http://badge.fury.io/rb/job_interview)
 
 ## SYNOPSIS
 
