@@ -3,7 +3,7 @@ module JobInterview
   module Fibonacci
 
     ##
-    # args should be the strategy to be used (one of :iterative, :recursive)
+    # args should be the strategy to be used (one of :iterative, :recursive, :matrix)
     # Defaults to recursive
     #
     def fib(n, *args)
