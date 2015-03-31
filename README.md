@@ -81,7 +81,7 @@ manhole_cover
  => "Because Reuleaux Triangles are hard to manufacture."
 ```
 
-Q.  What is you greatest weakness?
+Q.  What is your greatest weakness?
 
 ```ruby
 greatest_weakness
