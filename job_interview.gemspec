@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
                       'lib/job_interview/quine.rb']
   s.add_runtime_dependency 'faker', '~> 0.9.5'
   s.add_development_dependency 'rspec', '~> 2.9.0'
-  s.add_development_dependency 'rake', '~> 10.0.3'
+  s.add_development_dependency 'rake', '~> 12.3.3'
   s.test_files    = Dir.glob('spec/*_spec.rb')
   s.license       = 'GPLv3'
 end

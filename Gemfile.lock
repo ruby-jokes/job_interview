@@ -20,7 +20,7 @@ GEM
     i18n (0.6.4)
     mime-types (1.21)
     multi_json (1.7.1)
-    rake (10.0.3)
+    rake (12.3.3)
     rest-client (1.6.7)
       mime-types (>= 1.16)
     rspec (2.9.0)
@@ -43,5 +43,5 @@ PLATFORMS
 DEPENDENCIES
   coveralls
   job_interview!
-  rake (~> 10.0.3)
+  rake (~> 12.3.3)
   rspec (~> 2.9.0)
